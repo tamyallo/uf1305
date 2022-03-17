@@ -6,43 +6,6 @@
     <link rel="stylesheet" href="css/calculos.css" />
     <title>Factorial de n</title>
     <script src="js/calculos.js"></script>
-    <script>
-        // Definir variables
-        var n = 0;
-
-        // Funcion para leer numeros Reales
-        function leerNumero() {
-            num = parseInt(
-                prompt("Porfi, escribe un número")
-            );
-            return num;
-        }
-
-        function mostrarMultiplos(n, m) {
-            document.getElementById('td11').innerHTML = n;
-            document.getElementById('td12').innerHTML = m;
-            document.getElementById('td13').innerHTML = multiplosDeHasta(n, m);
-
-        function mostrarResultados( nf ) {
-            document.getElementById('td21').innerHTML = nf;
-            document.getElementById('td22').innerHTML = factorial( nf );
-        }
-    
-        function mostrarFactorial( nf ) {
-            document.getElementById('td21').innerHTML = nf;
-            document.getElementById('td22').innerHTML = factorial( nf );
-        }
-
-        function factorial( nf ) {
-            var factorial = 1;
-            for ( i=1; i <= n; i++ ) {
-                factorial = factorial * i;
-            }
-
-            return factorial;
-        }
-
-    </script>
 </head>
 
 <body>
