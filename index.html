@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/calculos.css" />
+    <title>Factorial de n</title>
+    <script>
+        // Definir variables
+        var n = 0;
+
+        // Funcion para leer numeros Reales
+        function leerNumero() {
+            num = parseInt(
+                prompt("Porfi, escribe un número")
+            );
+            return num;
+        }
+
+        function mostrarResultados() {
+            document.getElementById('td1').innerHTML = n;
+            document.getElementById('td2').innerHTML = factorial();
+        }
+
+        function factorial() {
+            var factorial = 1;
+            for ( i=1; i <= n; i++ ) {
+                factorial = factorial * i;
+            }
+
+            return factorial;
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Devolver el factorial de un número pedido al usuario</h1>
+    </header>
+    <nav></nav>
+    <main>
+
+        <article class="botones">
+            <h2>Múltiplos de 'n' hasta 'm'</h2>
+            <p>
+                <input type="button" onclick="n = leerNumero()" value="Primer número" />
+                <input type="button" onclick="m = leerNumero()" value="Segundo número" />
+                <input type="button" onclick="mostrarResultados()" value="Mostrar resultados" />
+            </p>
+
+            <table class="resultados">
+                <caption>Tabla de resultados</caption>
+                    <thead>
+                        <tr>
+                            <th>Primer número</th>
+                            <th>Segundo número</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="td11"></td>
+                            <td id="td12"></td>
+                            <td id="td13"></td>
+                        </tr>
+                    </tbody>
+            </table>
+        </article>
+
+        <article class="botones">
+            <h2>Factorial de 'n'</h2>
+            <p>
+                <input type="button" onclick="n = leerNumero()" value="Primer número" />
+                <input type="button" onclick="mostrarResultados()" value="Mostrar resultados" />
+            </p>
+            <table class="resultados">
+                <caption>Tabla de resultados</caption>
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Factorial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="td21"></td>
+                            <td id="td22"></td>
+                        </tr>
+                    </tbody>
+            </table>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
