@@ -17,12 +17,17 @@
             return num;
         }
 
-        function mostrarResultados() {
-            document.getElementById('td21').innerHTML = n;
-            document.getElementById('td22').innerHTML = factorial();
+        function mostrarMultiplos(n, m) {
+            document.getElementById('td11').innerHTML = n;
+            document.getElementById('td12').innerHTML = m;
+            document.getElementById('td13').innerHTML = multiplosDeHasta(n, m);
+
+        function mostrarFactorial( nf ) {
+            document.getElementById('td21').innerHTML = nf;
+            document.getElementById('td22').innerHTML = factorial( nf );
         }
 
-        function factorial() {
+        function factorial( nf ) {
             var factorial = 1;
             for ( i=1; i <= n; i++ ) {
                 factorial = factorial * i;
