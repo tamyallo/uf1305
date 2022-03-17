@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/calculos.css" />
     <title>Factorial de n</title>
+    <script src="js/calculos.js"></script>
     <script>
         // Definir variables
         var n = 0;
@@ -22,6 +23,11 @@
             document.getElementById('td12').innerHTML = m;
             document.getElementById('td13').innerHTML = multiplosDeHasta(n, m);
 
+        function mostrarResultados( nf ) {
+            document.getElementById('td21').innerHTML = nf;
+            document.getElementById('td22').innerHTML = factorial( nf );
+        }
+    
         function mostrarFactorial( nf ) {
             document.getElementById('td21').innerHTML = nf;
             document.getElementById('td22').innerHTML = factorial( nf );
