@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen UF1305</title>
+    <script>
+        //Definir variables
+        var n = 0;
+
+        //Función para leer números Enteros
+        function leerNumero() {
+            num = parseFloat(prompt("Porfavor, escribe un número"));
+            return num;
+        }
+
+        /*  Función que es la que nos va a mostrar
+            si el número que escribe el usuario es par o impar
+        */
+        function parImpar() {
+            if ( n % 2 == 0) {
+                resultado = " es un número par";
+            }
+            else {
+                resultado = " es un número impar";
+            }
+
+            alert(n + resultado);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Parte B Examen</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <article>
+            <h2>Ejercicio 1, Apartado C</h2>
+            <p>
+                <input type="button" onclick="n= leerNumero()" value="Dame un número entero">
+                <input type="button" onclick="parImpar()" value="Resultado">
+            </p>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

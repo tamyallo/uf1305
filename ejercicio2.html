@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function leerNumero() {
+            var num = parseFloat(prompt('Dame un número para la suma'));
+            return num;
+        }
+        function sumar () {
+            var suma = a + b;
+            alert('La suma de ' + a + ' más ' + b + ' es ' + suma);
+        }
+    </script>
+</head>
+<body onload="alert('Página cargada')">
+    <article>
+        <h2>Ejercicio sumar JavaScript</h2>
+        <p>
+            <button onclick="a = leerNumero()">Dame el primer sumando</button>
+            <button onclick="b = leerNumero()">Dame el segundo sumando</button>
+            <button onclick="sumar()">Resultado</button>
+        </p>
+    </article>
+</body>
+</html>

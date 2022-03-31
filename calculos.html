@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/calculos.js"></script>
+    <script>
+        var n = 11;
+        var factorial = factorial(n);
+
+        var a = 10;
+        var b = 1000;
+        var tmultiplos = multiplosDeHasta(a, b);
+
+        var x = 7;
+        var y = 100;
+        var suma = sumar(x, y);
+
+        var p1 = 2;
+        var p2 = 5;
+        var producto = multiplicar(p1, p2);
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cálculos con JavaScript</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <article>
+            <h2>Escribir factorial de un número con document.write</h2>
+            <p>
+                <input type="button" onclick="n = leerNumero()" value="Número a calcular su factorial">
+            </p>
+            <p>
+                <script>
+                    document.write("El factorial de " + n + " es " + factorial);
+                </script>
+            </p>
+        </article>
+        <article>
+            <h2>Escribir múltiplos de n hasta m </h2>
+            <p>
+                <script>
+                    document.write(tmultiplos);
+                </script>
+            </p>
+        </article>
+        <article>
+            <h2>Escribir el resultado de la suma de 2 números</h2>
+            <p>
+                <script>
+                    document.write("La suma de " + x + " y " + y + " es igual a " + suma + ".");
+                    document.write("<br/>");
+                    document.write("La suma de x e y es igual a suma ");
+                </script>
+            </p>
+        </article>
+        <article>
+            <h2>Escribir el resultado del producto de dos números</h2>
+            <p>
+                <script>
+                    document.write("El producto de " + p1 + " y " + p2 + " es igual a: " + producto);
+                </script>
+            </p>
+            <ul id=inner"></ul>
+        </article>
+        <article>
+           <h2>Jugando con getElementById</h2>
+           <p>
+                <button onclick="pj = leerTexto()">
+                    Personaje
+                </button>
+                <button onclick="mostrarInfo('pj1', 'strong', 'Personaje:', pj)">Mostrar personaje</button> 
+               
+           </p>
+           <p>
+            <button onclick="aldea = leerTexto()">
+                Aldea
+            </button>
+            <button onclick="mostrarInfo('aldea1', 'em', 'Aldea: ', aldea)">Mostrar Aldea</button>
+           </p>
+           <p>
+            <button onclick="clan = leerTexto()">
+            Clan
+            </button>
+            <button onclick="mostrarInfo('clan1', 'strong', 'Clan: ', clan)">Mostrar Clan</button>
+            </p>
+            <p>
+                <button onclick="sp = leerTexto()">Superpoder</button>
+                <button onclick="mostrarInfo('sp1', 'strong', 'Superpoder: ', sp)">Mostrar Superpoder</button>
+            </p>
+            <p>
+                <button onclick="vida = leerTexto()">Vidas</button>
+                <button onclick="mostrarInfo('vida1', 'strong', 'Vidas: ', vida)">Mostrar Vidas</button>
+            </p>
+            
+            <p>
+                <button onclick="mostrarTodo('datos', pj, aldea, clan, sp, vida)">Mostrar todo</button>
+            </p>
+           
+            
+       
+
+           <p id="pj1"></p>
+           <p id="aldea1"></p>
+           <p id="clan1"></p>
+           <p id="sp1"></p>
+           <p id="vida1"></p>
+           <ul id="datos"></ul>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>
